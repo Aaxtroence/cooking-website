@@ -92,3 +92,49 @@ h1 {
 .nav-block:hover {
     transform: scale(1.05);
 }
+
+/* Лаба 2 */
+
+table {
+    margin: 50px auto; 
+    color: white; 
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid white; 
+}
+
+th {
+    background-color: #333; 
+}
+
+td {
+    background-color: #555;
+}
+
+ol {
+    margin: 50px auto;
+    padding: 0;
+    list-style-position: inside;
+    max-width: 600px; 
+    color: white;
+}
+
+li {
+    background-color: #444;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 18px;
+    border: 1px solid white;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/*      */
