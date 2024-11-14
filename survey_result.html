@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дякуємо за участь</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-panel">
+        <a href="index.html">Головна</a>
+        <a href="about.html">Про нас</a>
+        <a href="contact.html">Контакти</a>
+        <a href="labSelection.html">Лабораторні роботи</a>
+        <a href="results.html">Результати</a>
+    </div>
+
+    <div class="message">
+    	<p>Дякуємо за участь в опитуванні, <span id="name"></span>!</p>
+        <p>Час та дата заповнення форми: <span id="timestamp"></span></p>
+        <p>Перенаправляємо вас на головну сторінку через <span id="countdown">10</span> секунд...</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+            const timestamp = urlParams.get('timestamp');
+            
+            document.getElementById('name').textContent = name;
+            document.getElementById('timestamp').textContent = timestamp;
+
+            let countdown = 10;
+            const countdownElement = document.getElementById('countdown');
+            const interval = setInterval(function() {
+                countdown--;
+                countdownElement.textContent = countdown;
+                if (countdown === 0) {
+                    clearInterval(interval);
+                    window.location.href = 'index.html';
+                }
+            }, 1000);
+        });
+    </script>
+
+    <script src="redirect.js"></script>
+</body>
+</html>

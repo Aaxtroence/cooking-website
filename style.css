@@ -1,6 +1,6 @@
 body {
     background-color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', serif;
     margin: 0;
     background-image: url('images/bgimage.png');
     background-size: cover;
@@ -93,12 +93,15 @@ h1 {
     transform: scale(1.05);
 }
 
-/* Лаба 2 */
+.nav-block {
+    transition: background-image 1s ease-in-out;
+}
 
 table {
     margin: 50px auto; 
     color: white; 
     border-collapse: collapse;
+    font-family: 'Times New Roman', serif;
 }
 
 th, td {
@@ -121,6 +124,7 @@ ol {
     list-style-position: inside;
     max-width: 600px; 
     color: white;
+    font-family: 'Times New Roman', serif;
 }
 
 li {
@@ -137,4 +141,117 @@ li {
     margin: 20px 0;
 }
 
-/*      */
+.lb6-page {
+    background-color: #f0f0f0;
+}
+
+.lb6-page h2 {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Times New Roman', serif;
+}
+
+.lb6-page form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', serif;
+}
+
+.lb6-page label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Times New Roman', serif;
+}
+
+.lb6-page input[type="text"], 
+.lb6-page input[type="email"], 
+.lb6-page input[type="radio"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Times New Roman', serif;
+}
+
+.lb6-page button {
+    background-color: #1b1b1b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    font-family: 'Times New Roman', serif;
+}
+
+.lb6-page button:hover {
+    background-color: #333;
+}
+
+.lb6-page input[type="radio"] {
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.message {
+    position: relative;
+    margin: 20px auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    color: #333;
+    border-radius: 8px;
+    width: 60%;
+}
+
+#refreshButton {
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 14px;
+    padding: 10px 30px;
+    border: 2px solid #333333;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    width: auto;
+    max-width: 200px;
+    transition: background-color 0.1s, border-color 0.1s;
+}
+
+.lab-button {
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 0;
+    display: block;
+    width: auto;
+    max-width: 200px;
+    cursor: pointer;
+    border: 2px solid #333333;
+    transition: background-color 0.1s, border-color 0.1s;
+    font-family: 'Times New Roman', serif;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛР6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="lb6-page">
+    <div class="top-panel">
+        <a href="index.html">Головна</a>
+        <a href="about.html">Про нас</a>
+        <a href="contact.html">Контакти</a>
+        <a href="labSelection.html">Лабораторні роботи</a>
+        <a href="results.html">Результати</a>
+    </div>
+    
+    <header>
+        <div class="divider">
+            <h1>Лабораторна робота №6</h1>
+        </div>
+    </header>
+
+    <h2>Анкета опитування</h2>
+
+    <form action="survey_process.php" method="POST">
+        <label>Ім'я:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Питання 1: Яка ваша улюблена кухня?</label><br>
+        <input type="radio" name="question1" value="Українська"> Українська<br>
+        <input type="radio" name="question1" value="Італійська"> Італійська<br>
+        <input type="radio" name="question1" value="Китайська"> Китайська<br>
+        <input type="radio" name="question1" value="Французька"> Французька<br><br>
+
+        <label>Питання 2: Чи подобається вам готувати?</label><br>
+        <input type="radio" name="question2" value="Так"> Так<br>
+        <input type="radio" name="question2" value="Ні"> Ні<br><br>
+
+        <label>Питання 3: Ваш улюблений десерт?</label><br>
+        <input type="text" name="question3"><br><br>
+
+        <button type="submit">Надіслати</button>
+    </form>
+
+    <script src="BackgroundMovement.js"></script>
+</body>
+</html>

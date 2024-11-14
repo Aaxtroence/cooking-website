@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результати</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-panel">
+        <a href="index.html">Головна</a>
+        <a href="about.html">Про нас</a>
+        <a href="contact.html">Контакти</a>
+        <a href="labSelection.html">Лабораторні роботи</a>
+        <a href="results.html">Результати</a>
+    </div>
+
+    <header>
+        <div class="divider">
+            <h1>Результати</h1>
+        </div>
+    </header>
+
+    <div class="results-container">
+        <table id="resultsTable">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Ім'я</th>
+                    <th>Email</th>
+                    <th>Улюблена кухня</th>
+                    <th>Подобається готувати</th>
+                    <th>Улюблений десерт</th>
+                    <th>Час</th>
+                </tr>
+            </thead>
+            <tbody id="resultsBody"></tbody>
+        </table>
+    </div>
+
+    <script src="BackgroundMovement.js"></script>
+    <script src="fetchResults.js"></script>
+</body>
+</html>
